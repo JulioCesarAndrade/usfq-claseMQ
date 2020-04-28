@@ -1,3 +1,54 @@
-\question [1]
+\question [20]
 
-HOLA PROBANDO LA PREGUNTA 2
+Un electrón está confinado a permanecer en el interior de una cavidad esférica vacía de radio $R$ con paredes impenetrables. Encuentre una expresión para la presión que dicho electrón en su estado base ejerce sobre las paredes de la cavidad.
+\begin{solution}
+Este es un problema con simetría esférica. La partícula está en el estado base, por lo tanto $\ell =0$. Ademas, la partícula es libre en el interior.
+Podemos hacer uso de la ecuación (6.57) de Zetilli, con $U(r)=rR(r)$, que para $r<R$ se tiene:
+\begin{equation}
+-\frac{\hbar^2}{2m}\frac{d^2 U(r)}{dr^2}=E U(r)
+\end{equation} 
+donde, $m$ es la masa del electrón. Efectivamente, para el caso de $r \geq R$, la función de onda radial es igual a cero. La ecuación anterior puede escribirse como:
+\begin{equation}
+\frac{d^2 U(r)}{dr^2}+k^2U(r)=0
+\end{equation}
+donde $k=\frac{\sqrt{2mE}}{\hbar}$. La solución a esta ecuación, como sabemos, es muy simple. Debe ser armónica, es decir, debe tomar la forma
+\begin{equation}
+U(r)=Asin(kr),
+\end{equation}
+donde $A$ es la constante de normalización.
+
+Esto está de acuerdo con la ecuación 6.64 de Zettili, cuya solución en este caso sería
+\begin{equation}
+R(\rho) =Aj_0 (\rho)=A\frac{sin(\rho)}{\rho}
+\end{equation}
+con $\rho=kr$. Para hallar la energía solo tenemos que satisfacer las condiciones de borde, es decir, $U(r)=0$ para $r=R$. Ademas, puesto que $R(r)$ tiene que ser finita para todo  $r<R$, entonces $U(0)=0$ (por dicha razón, no funcionaria un coseno).
+
+Por tanto, 
+\begin{equation}
+sin(kR)=n\pi  \ \ \ \ \text{con} \quad n=1,2,3, \ldots \notag
+\end{equation}
+Lo que lleva  a,
+\begin{equation}
+k_n=\frac{n\pi}{R}
+\end{equation}
+
+$$U(r)=Asin (\frac{n\pi r}{R}) $$
+Puesto que $k^2=\frac{2mE}{\hbar^2}$, entonces,
+\begin{equation}
+E_n=\frac{\pi^2\hbar^2n^2}{2mR^2}.
+\end{equation}
+Ahora, la presión es la fuerza media por unidad de área. La fuerza es el gradiente del potencial. En este caso, sin embargo, toda la energía potencial actuando sobre la pared es la energía cinética del electrón (por conservación de la energía). Entonces
+\begin{equation}
+F=-\frac{\partial <H>}{\partial R}=-\frac{\partial E}{\partial R}
+\end{equation}
+Al estar el electrón en el estado base, $n=1$,
+\begin{equation}
+F=- \frac{\partial E_1}{\partial R}=\frac{\pi^2 \hbar^2}{mR^3}
+\end{equation}
+Por lo tanto, la presión es,
+
+\begin{equation}
+P=\frac{\pi\hbar^2}{4mR^5}
+\end{equation}
+\end{solution}
+
