@@ -1,10 +1,73 @@
-\question [3] (20 puntos) 
+\question [3](20 puntos) Una partícula puntual de masa $m$ y carga $q$ se mueve en un ambiente espacialmente uniforme de campo eléctrico y magnético cruzados $\vec{B} =B_0\hat{z}$ y $\vec{E}=E_0\hat{x}$
+\begin{parts}
+  \part[10] Encuentre el espectro de energía. Pista: considere introducir el nuevo par de variables conjugadas $p_\xi=p_x$ y $\xi=x-\frac{cp_y}{qB_0}-\frac{mc^{2}E_0}{qB_0^{2}}$, y hacer $\omega= \left | q \right |B_0/mc$  
+\part[10] Evalúe el valor esperado de la velocidad $\vec{v}$ en el estado de momento igual a cero. Pista: no es necesariamente cero; note como construimos el operador de momento cuando existe campo magnético en mecánica
+cuántica.
+
+\end{parts}
+
+
 
 \begin{solution}
-Push de prueba
+Puesto que el Hamiltoniano es
+\begin{equation*}
+H=\frac{1}{2m}(\vec{p}-\frac{q}{c}\vec{A})^{2}+q\phi    \qquad (*)
+\end{equation*}
 
+necesitamos elegir un "gauge". Las condiciones son casi idénticas al problema resuelto en clase, excepto que ahora hay además un campo eléctrico cruzado.
+Tomemos, por tanto, el mismo gauge para $\vec{A}$, entonces
+\begin{equation*}
+\vec{A}=(0, x, 0)B_0=B_0x\hat{y}
+\end{equation*}
+de este modo $\vec{\bigtriangledown}x\vec{A}=B_0\hat{z}$.
+Además $\phi=-E_0x$, tal que  $-\vec{\bigtriangledown}\phi=E_0\hat{x}$ como requiere el problema.
+En el anterior problema, hecho en clase, habíamos llegado a constatar que arribamos a una ecuación similar al del oscilador armónico unidimensional, pero desplazado. Obtuvimos algo como:
+\begin{equation*}
+\frac{1}{2m}[p_x^{2}+m^{2}\omega_c^{2}(x-x_0)^2]\tilde{u}(x-x_0)=\tilde{E}\tilde{u}(x-x_0) \qquad (**)
+\end{equation*}
+donde $\omega_c=\frac{ \left | q \right |B}{cm}$, $x_0=\frac{ck_y\hbar}{ \left | q \right |B}$ y $\tilde{E}=E-\frac{\hbar^{2}}{2m}$.
+La solución fue $Ek_{z,n}=\frac{\hbar^{2}k_z^{2}}{2m}+\hbar\omega_c(n+\frac{1}{2})$ .
+a) La pista nos sugiere que el Hamiltoniano toma una forma parecida al problema visto en clase excepto que el oscilador tiene un origen $x_0$ que se ve influenciado por el campo eléctrico del problema.
+Entonces, si logramos escribir el Hamiltoniano en una forma parecida a la ecuación (**), podemos obtener automáticamente la respuesta. 
+Por la simetría debería poder escribir el análogo de (**) como:
+\begin{equation*}
+\frac{1}{2m}[p_x^{2}+m^{2}\omega_c^{2}(x-x_0)^{2}]\tilde{u}(x-x_0)=\tilde{E}\tilde{u}(x-x_0)
+\end{equation*}
+con $x_0=\frac{cp_y}{qB_0}+\frac{c^{2}mE_0}{qB_0^{2}}$.
+Puesto que la ecuación (*) se puede escribir como
+\begin{equation*}
+H=\frac{1}{2m}[p_x^{2}+p_y^{2}+p_z^{2}+\frac{q^{2}}{c^2}B_0^{2}x^{2}-\frac{2q}{c}p_yB_0x]-qE_0x
+\end{equation*}
+y de acuerdo a la pista
+\begin{equation*}
+\frac{1}{2m} m^2\omega(x-x_0)^2=\frac{1}{2m}\frac{q^2B_0^2}{c^2}(x-\frac{cp_y}{qB_0}-\frac{c^2mE_0}{qB_0^2})^2
+\end{equation*}
 
+\begin{equation*}
+=\frac{1}{2m}\frac{q^2B_0^2}{c^2}[x^2+\frac{c^2p_y^2}{q^2B_0^2}+\frac{c^4m^2B_0^2}{q^2B_0^4}-\frac{2xcp_y}{qB_0}-\frac{2xc^2mE_0}{qB_0^2}+\frac{c^3p_ymE_0}{q^2B_0^3}]
+\end{equation*}
+\begin{equation*}
+=\frac{1}{2m}[p_y^2+\frac{q^2}{c^2}B_0^2x^2-2\frac{q}{c}p_yB_0x]-qE_0x+\frac{cp_yE_0}{B_0}
+\end{equation*}
+Entonces  (*) se podría escribir como:
+\begin{equation*}
+H=\frac{1}{2m}p_x^2+\frac{q^2B_0^2}{2mc^2}(x-\frac{cp_y}{qB_0}-\frac{c^2mE_0}{qB_0^2})^2+\frac{1}{2m}p_z^2-\frac{mc^2E_0^2}{2B_0^2}-\frac{cp_yE_0}{B_0}
+\end{equation*}
 
+Es decir,
+\begin{equation*}
+H=\frac{p_\xi^2}{2m}+\frac{p_z^2}{2m}+\frac{1}{2}m\omega^2\xi^2-\frac{mc^2E_0^2}{2B_0^2}-\frac{cp_yE_0}{B_0}
+\end{equation*}
+La ecuación de Schrödinguer puede ser escrita como
+\begin{equation*}
+\frac{1}{2m}[p_\xi^2+m^2\omega^2(x-x_0)^2]\tilde{u}(x-x_0)=\tilde{E} \tilde{u}(x-x_0)
+\end{equation*}
+con $x_0=\frac{cp_y}{qB_0}+\frac{c^2mE_0}{qB_0^2}$, $\omega=\frac{ \left | q \right |  B }{cm}$, $\xi=x-x_0$ y $\tilde{E}=E+\frac{mc^2E_0^2}{2B_0^2}+\frac{cp_yE_0}{B_0}-\frac{p_z^2}{2m}$
+Entonces, inmediatamente podemos leer la energía como
+\begin{equation}
+E_n=\frac{p_z^2}{2m}+(n+\frac{1}{2}\hbar\omega)-\frac{mc^2E_0^2}{2B_0^2}-cp_y\frac{E_0}{B_0}, \quad n=0, 1, 2, ...
+\end{equation*}
+A diferencia del ejemplo visto en clase, no existe degeneracion con $k_y$.
 \end{solution}
 
 vspace{1.0cm}
