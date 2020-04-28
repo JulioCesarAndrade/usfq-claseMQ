@@ -1,0 +1,30 @@
+\question [2]
+
+Un electrón está confinado a permanecer en el interior de una cavidad esférica vacía de radio $R$ con paredes impenetrables. Encuentre una expresión para la presión que dicho electrón en su estado base ejerce sobre las paredes de la cavidad.
+\begin{solution}
+Este es un problema con simetría esférica. La partícula está en el estado base, por lo tanto $\ell =0$. Ademas, la particula es libre en el interior.
+Podemos hacer uso de la ecuacion (6.57) de Zetilli, con $U(r)=rR(r)$, que para $r<R$ se tiene:
+\begin{equation}
+-\frac{\hbar^2}{2m}\frac{d^2 U(r)}{dr^2}=E U(r)
+\end{equation} 
+donde, $m$ es la masa del electron. Efectivamente, para el caso de $r \geq R$, la función de onda radial es igual a cero. La ecuacion 1 puede escribirse como:
+\begin{equation}
+\frac{d^2 U(r)}{dr^2}+k^2U(r)=0
+\end{equation}
+donde $k=\frac{\sqrt{2mE}}{\hbar}$.
+
+La solución a esta ecuación, como sabemos, es muy simple. Debe ser armónica, es decir, debe tomar la forma
+\begin{equation}
+U(r)=Asin(kr),
+\end{equation}
+donde $A$ es la constante de normalizacion.
+
+Esto está de acuerdo con la ecuación 6.64 de Zettili, vuya solucion en este caso sería
+\begin{equation}
+R(\rho) =Aj_0 (\rho)=A\frac{sin(\rho)}{\rho}
+\end{equation}
+con $\rho=kr$.
+
+Para hallar la energia solo t
+
+\end{solution}
