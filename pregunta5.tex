@@ -1,9 +1,8 @@
-
 \question[20]
 Suponga que un electr\'{o}n est\'{a} en un estado descrito por la funci\'{o}n de onda
 
 \begin{equation*}
-    \psi=\dfrac{1}{\sqrt{4 \pi}} \left( e^{i \phi} sin \theta + cos \theta \right) g(r),
+    \psi=\dfrac{1}{\sqrt{4 \pi}} \left( e^{i \phi} \sin(\theta) + \cos(\theta) \right) g(r),
 \end{equation*}
 donde  
 $$
@@ -19,11 +18,12 @@ y $\phi$, $\theta$ son los \'{a}ngulos azimutal y polar respectivamente.
 
 \begin{solution}
   \begin{parts}
-	\item Como se puede ver en la tabla 5.2 de Zetilli,
-	\begin{itemize*}
-	    \item[] $Y_{10}(\phi,\theta)=\sqrt{\dfrac{3}{4 pi}} cos \theta$
-	    \item[] $Y_{1 \pm 1}(\phi,\theta)=\mp \sqrt{\dfrac{3}{8 \pi}}e^{\pm i \phi} sin \theta$
-	\end{itemize*}
+	\item Como se puede ver en la tabla 5.2 de Zetilli,\\
+	
+	 $Y_{10}(\phi,\theta)=\sqrt{\dfrac{3}{4 pi}} \cos(\theta)$\\
+	 
+	 $Y_{1 \pm 1}(\phi,\theta)=\mp \sqrt{\dfrac{3}{8 \pi}}e^{\pm i \phi} \sin(\theta)$\\
+	    
 	Entonces, la funci\'{o}n de onda puede escribirse como:
  \begin{equation*}
      \psi=\sqrt{\dfrac{1}{3}} \left( -\sqrt{2} Y_{11} + Y_{10}\right)g(r)
@@ -31,8 +31,8 @@ y $\phi$, $\theta$ son los \'{a}ngulos azimutal y polar respectivamente.
 	Veamos si $\psi$ esta normalizada:
 \begin{equation*}
 \begin{aligned}
- \int \psi^{*} \psi dV&=\dfrac{1}{3}\int \left( -\sqrt{2}Y_{11}^{*} + Y_{10}^{*}\right)g(r)^{*} \left( -\sqrt{2} Y_{11}+Y_{10}\right)g(r) r^2 sin \theta d \theta d\phi dr \\
- &= \dfrac{1}{3}\int_0 ^{\infty} |g(r)|^2 r^2 dr \int \left( 2|Y_{11}|^2 + |Y_{10}|^2  \right)sin \theta d\theta d\phi\\
+ \int \psi^{*} \psi dV&=\dfrac{1}{3}\int \left( -\sqrt{2}Y_{11}^{*} + Y_{10}^{*}\right)g(r)^{*} \left( -\sqrt{2} Y_{11}+Y_{10}\right)g(r) r^2 \sin(\theta) d \theta d\phi dr \\
+ &= \dfrac{1}{3}\int_0 ^{\infty} |g(r)|^2 r^2 dr \int \left( 2|Y_{11}|^2 + |Y_{10}|^2  \right)\sin(\theta) d\theta d\phi\\
  &=\dfrac{1}{3} \left( 1\right) \left(2+1\right)\\
  &=1
  \end{aligned}\label{Norm}
@@ -47,15 +47,15 @@ Por lo tanto, los posibles valores de $L_z$ son $\hbar$ y $0$.
 \begin{equation*}
 \begin{aligned}
  \langle L_z \rangle &=\langle \psi| L_z |\psi \rangle \\
- &= \int \psi^{*} L_z \psi r^2 sin \theta d \theta d\phi \dr\\
- &=\dfrac{1}{3}\int \left( -\sqrt{2}Y_{11}^{*} + Y_{10}^{*}\right)g(r)^{*} \hat{L_z} \left( -\sqrt{2} Y_{11}+Y_{10}\right)g(r) r^2 sin \theta d \theta d\phi dr\\
+ &= \int \psi^{*} L_z \psi r^2 \sin(\theta) d \theta d\phi dr \\
+ &=\dfrac{1}{3}\int \left( -\sqrt{2}Y_{11}^{*} + Y_{10}^{*}\right)g(r)^{*} \hat{L_z} \left( -\sqrt{2} Y_{11}+Y_{10}\right)g(r) r^2 \sin(\theta) d \theta d\phi dr\\
 \end{aligned}\label{Norm}
 \end{equation*}
 
 Puesto que $\hat{L_z}Y_{11}=\hbar Y_{11}$\\
 y que $\hat{L_z}Y_{10}=0$ la integral se transforma en:\\
 \begin{equation*}
-    \langle L_z \rangle = \dfrac{2}{3}\hbar \int_{0}^{2\pi} d\phi \int_{0}^{\pi} d\theta sin \theta |Y_{11}|^2
+    \langle L_z \rangle = \dfrac{2}{3}\hbar \int_{0}^{2\pi} d\phi \int_{0}^{\pi} d\theta \sin(\theta) |Y_{11}|^2
 \end{equation*}
 	Tomando el resultado 5.165 de Zetilli se tiene $\langle L_z \rangle=\dfrac{2}{3}\hbar$
 \end{parts}
