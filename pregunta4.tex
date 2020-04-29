@@ -1,1 +1,90 @@
-\question [4]
+\question [20]
+\begin{parts}
+    \part[10] Una partícula de espín 1 y otra de espín 2 se encuentran en reposo de manera que su configuración de espín total es 3, con componente $z$ igual a $\hbar$. Si se midiera la componente $z$ del momento angular de la partícula de espín 2, ¿qué valores se podrían obtener y con qué probabilidades? (\textbf{Importante:} en este literal, para construir el o los estados requeridos, no se puede usar las tablas de Clebsch-Gordan ni fórmulas de recurrencia. Se debe mostrar  \textbf{explícitamente} como fueron construidos desde el inicio.)
+    
+    \part[10] Un electrón con espín ``down'' está en el estado $\psi_{510}$ de un átomo de hidrógeno. Si se pudiera medir el cuadrado del momento angular total del electrón individualmente (sin incluir el espín del protón), ¿qué valores se podría obtener y con qué probabilidades? \textbf{Importante:} aquí sí puede usar las tablas de Clebsch-Gordan o fórmulas de recurrencia. Indique el momento en que las usa.
+  \end{parts}
+  
+  \begin{solution}
+    \begin{parts}
+      \item Tenemos una caja con $j=3$. Los giróscopos tienen $j_1=3$ y $j_2=1$ (o viceversa).\\*
+      Los posibles estados de la caja son:\\*
+     \begin{doublespace}
+  \noindent\(\pmb{|3,3\rangle ; |3,2\rangle ; |3,1\rangle ; |3,0\rangle ; |3,-1\rangle ; |3,-2\rangle ; |3,-3\rangle }\)
+  \end{doublespace}
+  
+  Sin embargo, el problema dice que la proyecci{\' o}n \(z\) de la caja es $\hbar $. Obviamente, ya que { }\(S_z|3,1\rangle = \hbar  |3,1\rangle\),
+  eso significa que la caja est{\' a} en el estado \(|3,1\rangle\).
+  
+  Nos piden obtener probabilidades relacionadas con uno de los gir{\' o}scopos. Entonces, necesitamos expresar el estado de la caja en funci{\' o}n
+  de los estados de los gir{\' o}scopos. Como es necesario hacerlo anal{\' \i}ticamente, empiezo por la parte m{\' a}s alta de la escalera, \(|3,3\rangle
+  =|2,2\rangle |1,1\rangle\), y aplico el operador \(J_-=J_{1_-}+J_{2_-}\) dos veces para obtener \(|3,1\rangle\).
+  
+  \[J_-|3,3\rangle =\left(J_{1_-}+J_{2_-}\right)|2,2\rangle |1,1\rangle\]
+  
+  \begin{align*}
+       \sqrt{3(3+1)-3(3-1)}|3,3\rangle &=\sqrt{2(2+1)-2(2-1)}|2,1\rangle |1,1\rangle \\
+  &+\sqrt{1(1+1)-1(1-1)}|2,2\rangle |1,0\rangle\
+  \end{align*}
+  
+  \[\sqrt{6}|3,2\rangle =\sqrt{4}|2,1\rangle |1,1\rangle +\sqrt{2}|2,2\rangle |1,0\rangle\]
+  
+  \[|3,2\rangle =\sqrt{\frac{2}{3}}|2,1\rangle |1,1\rangle +\sqrt{\frac{1}{3}}|2,2\rangle |1,0\rangle\]
+  
+  Ahora,
+  
+  \[J_-|3,2\rangle =\left(J_{1_-}+J_{2_-}\right)\left\{\sqrt{\frac{2}{3}}|2,1\rangle |1,1\rangle +\sqrt{\frac{1}{3}}|2,2\rangle |1,0\rangle \right\}\]
+  
+  \begin{align*}
+      \sqrt{3(3+1)-2(2-1)}|3,1\rangle &=\sqrt{\frac{2}{3}}\sqrt{2(2+1)-1(1-1)}|2,0\rangle |1,1\rangle \\ &+\sqrt{\frac{2}{3}}\sqrt{1(1+1)-1(1-1)}|2,1\rangle|1,0\rangle \\
+     &+\sqrt{\frac{1}{3}}\sqrt{2(2+1)-2(2-1)}|2,1\rangle |1,0\rangle \\
+      &+\sqrt{\frac{1}{3}}\sqrt{1(1+1)-0}|2,2\rangle |1,-1\rangle
+  \end{align*}
+  
+  \begin{align*}
+      \sqrt{10}|3,1\rangle &= \sqrt{4}|2,0\rangle |1,1\rangle +\sqrt{\frac{4}{3}}|2,1\rangle |1,0\rangle \\ 
+          &+ \sqrt{\frac{4}{3}}|2,1\rangle |1,0\rangle +\sqrt{\frac{2}{3}}|2,2\rangle|1,-1\rangle\\
+          &=\sqrt{4}|2,0\rangle |1,1\rangle +2\sqrt{\frac{4}{3}}|2,1\rangle |1,0\rangle +\sqrt{\frac{2}{3}}|2,2\rangle |1,-1\rangle
+  \end{align*}
+  
+  Entonces, los valores que se pueden obtener son:\\
+  
+  \(2\hbar\) con probabilidad \(\frac{1}{15}\)
+  
+  \(\hbar\) { }con probabilidad \(\frac{8}{15}\)
+  
+  \(0\) { }con probabilidad \(\frac{2}{5}\)\\
+  
+  \item
+   Ahora, tenemos una caja que es el electr{\' o}n. Sus dos momentos angulares son los gir{\' o}scopos. Conocemos informaci{\' o}n sobre los gir{\'
+  o}scopos individuales (un gir{\' o}scopo tiene esp{\' \i}n {``}hacia abajo{''} y el otro tiene momento angular orbital 1 con proyecci{\' o}n cero)
+  y tenemos que obtener probabilidades relacionadas con el momento angular de la caja.
+  
+  Entonces, a diferencia del literal anterior, es f{\' a}cil obtenerlas observando el estado de los gir{\' o}scopos en funci{\' o}n de los posibles
+  estados de la caja. (Es decir, en otra base)
+  
+  De la tabla de Clebsch-Gordan \(1x \frac{1}{2}\):
+  
+  \[|1,0\rangle \left|\frac{1}{2},-\frac{1}{2}\right\rangle =\sqrt{\frac{2}{3}}\left|\frac{3}{2},-\frac{1}{2}\right\rangle +\sqrt{\frac{1}{3}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle\]
+  
+  Ahora, operamos con el cuadrado del momento angular total, que lo calculamos como \(J^2|j,m\rangle =j(j+1)\hbar ^2|j,m\rangle\):
+  
+  \[J^2|1,0\rangle \left|\frac{1}{2},-\frac{1}{2}\right\rangle =J^2\sqrt{\frac{2}{3}}\left|\frac{3}{2},-\frac{1}{2}\right\rangle +J^2\sqrt{\frac{1}{3}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle\]
+  
+  \begin{multline*}
+      J^2|1,0\rangle \left|\frac{1}{2},-\frac{1}{2}\right\rangle =\left(\frac{3}{2}\left(\frac{3}{2}+1\right)\hbar ^2\right)\sqrt{\frac{2}{3}}\left|\frac{3}{2},-\frac{1}{2}\right\rangle \\
+  +\left(\frac{1}{2}\left(\frac{1}{2}+1\right)\hbar ^2\right)\sqrt{\frac{1}{3}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle
+  \end{multline*}
+  
+  \[J^2|1,0\rangle \left|\frac{1}{2},-\frac{1}{2}\right\rangle =\left(\frac{15}{4}\hbar ^2\right)\sqrt{\frac{2}{3}}\left|\frac{3}{2},-\frac{1}{2}\right\rangle
+  +\left(\frac{3}{4}\hbar ^2\right)\sqrt{\frac{1}{3}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle\]
+  
+  Entonces, obtenemos los siguientes valores:\\
+  
+  \(\frac{15}{4}\hbar\) { }con probabilidad { }\(\frac{2}{3}\)
+  
+  \(\frac{3}{4}\hbar\) { }con probabilidad { }\(\frac{1}{3}\)
+  
+  \end{parts}
+  \end{solution}
+  
