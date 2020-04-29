@@ -1,11 +1,14 @@
-\question [20]
+\question[20]
+
 \begin{parts}
-    \part[10] Una partícula de espín 1 y otra de espín 2 se encuentran en reposo de manera que su configuración de espín total es 3, con componente $z$ igual a $\hbar$. Si se midiera la componente $z$ del momento angular de la partícula de espín 2, ¿qué valores se podrían obtener y con qué probabilidades? (\textbf{Importante:} en este literal, para construir el o los estados requeridos, no se puede usar las tablas de Clebsch-Gordan ni fórmulas de recurrencia. Se debe mostrar  \textbf{explícitamente} como fueron construidos desde el inicio.)
+
+\part[10] Una partícula de espín 1 y otra de espín 2 se encuentran en reposo de manera que su configuración de espín total es 3, con componente $z$ igual a $\hbar$. Si se midiera la componente $z$ del momento angular de la partícula de espín 2, ¿qué valores se podrían obtener y con qué probabilidades? (\textbf{Importante:} en este literal, para construir el o los estados requeridos, no se puede usar las tablas de Clebsch-Gordan ni fórmulas de recurrencia. Se debe mostrar  \textbf{explícitamente} como fueron construidos desde el inicio.)
     
-    \part[10] Un electrón con espín ``down'' está en el estado $\psi_{510}$ de un átomo de hidrógeno. Si se pudiera medir el cuadrado del momento angular total del electrón individualmente (sin incluir el espín del protón), ¿qué valores se podría obtener y con qué probabilidades? \textbf{Importante:} aquí sí puede usar las tablas de Clebsch-Gordan o fórmulas de recurrencia. Indique el momento en que las usa.
-  \end{parts}
+\part[10] Un electrón con espín ``down'' está en el estado $\psi_{510}$ de un átomo de hidrógeno. Si se pudiera medir el cuadrado del momento angular total del electrón individualmente (sin incluir el espín del protón), ¿qué valores se podría obtener y con qué probabilidades? \textbf{Importante:} aquí sí puede usar las tablas de Clebsch-Gordan o fórmulas de recurrencia. Indique el momento en que las usa.
+
+\end{parts}
   
-  \begin{solution}
+\begin{solution}
     \begin{parts}
       \item Tenemos una caja con $j=3$. Los giróscopos tienen $j_1=3$ y $j_2=1$ (o viceversa).\\*
       Los posibles estados de la caja son:\\*
@@ -23,7 +26,7 @@
   \[J_-|3,3\rangle =\left(J_{1_-}+J_{2_-}\right)|2,2\rangle |1,1\rangle\]
   
   \begin{align*}
-       \sqrt{3(3+1)-3(3-1)}|3,3\rangle &=\sqrt{2(2+1)-2(2-1)}|2,1\rangle |1,1\rangle \\
+       \sqrt{3(3+1)-3(3-1)}|3,2\rangle &=\sqrt{2(2+1)-2(2-1)}|2,1\rangle |1,1\rangle \\
   &+\sqrt{1(1+1)-1(1-1)}|2,2\rangle |1,0\rangle\
   \end{align*}
   
@@ -47,6 +50,10 @@
           &=\sqrt{4}|2,0\rangle |1,1\rangle +2\sqrt{\frac{4}{3}}|2,1\rangle |1,0\rangle +\sqrt{\frac{2}{3}}|2,2\rangle |1,-1\rangle
   \end{align*}
   
+  \begin{equation*}
+\Rightarrow  |3,1\rangle = \sqrt{\frac{2}{5}}|2,0\rangle |1,1\rangle + \sqrt{\frac{8}{15}}|2,1\rangle |1,0\rangle +\sqrt{\frac{1}{15}}|2,2\rangle |1,-1\rangle
+  \end{equation*}
+  
   Entonces, los valores que se pueden obtener son:\\
   
   \(2\hbar\) con probabilidad \(\frac{1}{15}\)
@@ -63,7 +70,7 @@
   Entonces, a diferencia del literal anterior, es f{\' a}cil obtenerlas observando el estado de los gir{\' o}scopos en funci{\' o}n de los posibles
   estados de la caja. (Es decir, en otra base)
   
-  De la tabla de Clebsch-Gordan \(1x \frac{1}{2}\):
+  De la tabla de Clebsch-Gordan \(1\times \frac{1}{2}\):
   
   \[|1,0\rangle \left|\frac{1}{2},-\frac{1}{2}\right\rangle =\sqrt{\frac{2}{3}}\left|\frac{3}{2},-\frac{1}{2}\right\rangle +\sqrt{\frac{1}{3}}\left|\frac{1}{2},-\frac{1}{2}\right\rangle\]
   
@@ -85,6 +92,6 @@
   
   \(\frac{3}{4}\hbar\) { }con probabilidad { }\(\frac{1}{3}\)
   
-  \end{parts}
-  \end{solution}
+\end{parts}
   
+\end{solution}  
